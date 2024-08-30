@@ -1,0 +1,143 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+    .profile-info h1 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .profile-info h2 {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 5px 0 0;
+    }
+
+.profile-image {
+    flex: 0 0 auto;
+    margin: 0 20px;
+}
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        object-fit: cover;
+    }
+
+.contact-info {
+    flex: 1;
+    text-align: right;
+}
+
+    .contact-info p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.job, .edu-item {
+    margin-bottom: 20px;
+}
+
+    .job h4, .edu-item h4 {
+        margin: 0;
+        color: #2c3e50;
+    }
+
+.job-title, .date {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    background-color: #ecf0f1;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+    .skill-bar div {
+        background-color: #3498db;
+        height: 100%;
+    }
+
+/* Iconos (puedes usar una librería de iconos como Font Awesome para mejores resultados) */
+.icon-phone:before {
+    content: "📞 ";
+}
+
+.icon-email:before {
+    content: "📧 ";
+}
+
+.icon-location:before {
+    content: "📍 ";
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info, .contact-info {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 20px 0;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
